@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Overlock&display=swap');
+
+
+/* Contenedor general */
+#container{
+    width:auto;
+    height: 3200px;
+    background: #F8F9FC ;
+    margin: 0.5em auto;
+    padding: 0.5em;
+}
+
+/* Cabecera principal: Jesús Lázaro */
+h1{
+    font-family: 'Lobster';
+    height: 0.5%;
+    font-size: 120px;
+    color: #787878;
+    text-align: center;
+    inline-block: 1em;
+    margin-bottom: 1.2em;
+}
+
+/* Estilos de los encabecados de las secciones */
+h2, h3{
+    height:0.3%;
+    font-family: 'Lobster';
+    font-size: 50px;
+    color: #F7860E;
+    margin-top: 1em;
+    text-align: center;
+    inline-block: 1em;
+    margin-bottom: 2em;
+}
+
+/* Estilos de los enlaces */
+a {
+	color: #F7860E;
+	font-family: 'overlock';
+	font-size: 25px;
+	text-decoration:none;
+}
+
+a {
+    display: inline-block;
+    position: relative;
+    color: #F7860E;
+    text-decoration: none;
+}
+a:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    transition: all .8s;
+}
+a:hover:after {
+    width: 100%;
+    background: #F7860E;
+}
+
+/* Contenedor de la foto principal y de la descripción */
+#intro{
+    height:25%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+}
+
+.box{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Contenedor de la foto principal */
+#intro-1{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+}
+
+/* Contenedor y estilos de la descripción */
+
+#intro-2{
+    width: 73%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    font-family: 'overlock';
+    font-size: 25px;
+    margin-top: 10px;
+
+}
+/* Propiedades de la imagen principal */
+.image{
+    height: 420px;
+    margin-top: -30px;
+}
+
+
+/* Contenedor y estilos de la sección: Intereses y Afciones */
+
+.list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.list > div{
+    width: 170px;
+    margin: 10px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 20px;
+    font-family: 'overlock';
+    font-weight: bold;
+}
+
+.list img{
+     width: 200px;
+     height: 200px;
+     border-radius: 44px 0px 46px 0px;
+    -moz-border-radius: 44px 0px 46px 0px;
+    -webkit-border-radius: 44px 0px 46px 0px;
+    border: 0px solid #000000;
+    object-fit: cover;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.35);
+    box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.35);
+}
+
+.box2:hover, .box2:focus, .box2:active {
+  -webkit-transform: scale(1.035);
+  transform: scale(1.035);
+}
+
+/* Contenedor y estilos de la sección: Portfolio */
+
+#portfolio .image-1{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#portfolio .box1{
+    width: 32%;
+    height: 32%;
+    height: 300px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 6px;
+    margin-left: 5px;
+    overflow: hidden;
+    vertical-align: top;
+    border-radius: 35px 35px 35px 35px;
+    -moz-border-radius: 35px 35px 35px 35px;
+    -webkit-border-radius: 35px 35px 35px 35px;
+    border: 0px solid #000000;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.35);
+    box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.35);
+}
+
+#portfolio .box1 img{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    object-fit: cover;
+}
+
+.box1:hover, .box1:focus, .box1:active {
+  -webkit-transform: scale(1.035);
+  transform: scale(1.035);
+}
+
+/* Contenedor y estilos de la sección: Contacto*/
+
+form {
+    background-color: white;
+    padding: 25px;
+    color: #F7860E;
+    border-radius: 4px;
+    margin: 0 auto;
+    width: 300px;
+    font-size: 1.1em;
+}
+
+input, textarea{
+    outline: none;
+    border: 0;
+    width: 280px;
+}
+
+.field{
+    border: solid 1px #ccc;
+    padding: 10px;
+
+
+}
+.field:focus{
+    border-color: #F7860E;
+}
+
+.center-content{
+    text-align: center;
+}
+
+
+.btn{
+	border-radius: 3px;
+	display: inline-block;
+	padding: 20px 15px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+.btn-green{
+	color: white;
+	background-color: #F7860E;
+}
+btn-green:hover{
+	background-color: #D36F05;
+}
+	.btn-green:active{
+	background-color: #B45F05;
+}
+
+
+
+
