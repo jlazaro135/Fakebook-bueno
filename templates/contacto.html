@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title%}
+    <title>Contacto</title>
+{% endblock title %}
+
+
+{% block content %}
+<div class="footer">
+    <h2>¿Quieres saber más? ¡Contáctame!</h2>
+        <form action="" method="GET">
+            <label for="name1">Nombre:</label><br>
+            <input type="text" name="name1" id="name1" class="field">
+            <br>
+            <br>
+            <br>
+            <label for="email">Correo electrónico:</label><br>
+            <input type="text" name="name1" id="email" class="field">
+            <br>
+            <br>
+            <br>
+            <label for="text">Comentarios:</label><br>
+            <textarea name="name1" id="text" class="field"></textarea>
+            <br>
+            <br>
+            <br>
+            <p class="center-content">
+            <input type="button" class="btn btn-green" value="Enviar">
+            </p>
+        </form>
+</div>
+
+<div class="box">
+    <div id="intro-2">
+        <p><a href="/" title="principal" target="_self">   PRINCIPAL      </a>  <a href="/aficiones" title="Portfolio" target="_self">    AFICIONES     </a> <a href="/contacto" title="Portfolio" target="_self">   PORTFOLIO    </a>
+        </p>
+    </div>
+</div>
+{% endblock content %}
